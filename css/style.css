@@ -1,66 +1,84 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 
-:root{
-    --orange: #ffa500; 
+html {
+  scroll-behavior: smooth;
 }
+
 *{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
-::selection{
-    background-color: var(--orange);
-    color: #fff;
+/*
+==========================================
+   Header Design
+==========================================
+*/
+.navigation-wrap{
+  position:fixed;
+  width:100%;
+  left:0;
+  z-index:1000;
+  -webkit-transition:all 0.3s ease-out;
+  transition:all 0.3s ease-out;
+  background-color: #2b2a33;
+} 
+
+.navbar-brand{
+  color: #fff;
+}
+.navigation-wrap .nav-item{
+  padding:0 0.625rem;
+  transition:all 200ms linear;
+}
+.navbar-toggler{
+  color: #fff;
+}
+.navbar-toggler:focus{
+  outline:unset;
+  border:unset;
+  box-shadow: none;
+}
+.nav-link{
+  font-size:1rem;
+  text-transform: capitalize;
+  color:#fff;
+  letter-spacing: 1px;
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+.navbar-brand:hover{
+  color: #fff;
 }
-
-header{
-    position: fixed;
-    top: 0; left: 0;
-    right: 0;
-    background-color: #181818;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:2rem 9%;
+.nav-link:hover{
+  text-decoration: underline;
+  color: #fff;
 }
 
 
-header .logo{
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: #fff;
-    text-transform: uppercase;
-}
+/* Change navbar styling on scroll */
 
-header .logo span{
-    color: var(--orange);
-}
-
-
-header .navbar a{
-    color: #fff;
-    font-size: 2rem;
-    margin: 0 .8rem;
-    
-}
-header .navbar a:hover{
-    color: var(--orange);
+.navigation-wrap.scroll-on{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+  transition:all .15s ease-in-out 0s;
 }
 
 
+.navbar .navbar-collapse {
+  margin-top: .3rem;
+  text-align: center;
+}
+ 
 
-/* navbar sections ends */
+
