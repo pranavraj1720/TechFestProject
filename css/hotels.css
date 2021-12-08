@@ -181,7 +181,13 @@ header .navbar-nav li a{
   }
 }
 
-
+@media (max-width: 955px){
+    .packages .box-container {
+        -ms-grid-columns: (minmax(45rem, 1fr))[auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        gap: 1.5rem;
+      }
+}
 
 
 @media (max-width: 450px) {
@@ -190,5 +196,11 @@ header .navbar-nav li a{
   }
   .heading {
     font-size: 3rem;
+  }
+
+  .packages .box-container {
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
   }
 }   
