@@ -22,13 +22,12 @@
 ::-webkit-scrollbar-thumb{
     background-color: #1a191f;
 }
-header {
+/* header {
     padding: 2rem 9%;
-}
+} */
 
 
 html{
-    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -40,105 +39,42 @@ a{
 
 /* Navbar Section Starts  */
 
-.header{
-    padding: 3rem 9%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;    
-    background-color: #1a191f;
-    z-index: 100;
+header{
+  padding: 1rem 5%;
+  background-color: #1a191f;
 }
+ 
 
-
-.header .navbar{
-    z-index: 100;
-}
-
-
-.header .logo h1{
-    font-size: 2.5rem;
-    font-weight: normal;
-}
-
-.header .logo h1 span{
+header .navbar-brand span{
   color: #f9ab00;
 }
-.header .navbar a{
-    font-size: 2rem;
-    margin-left: 2rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300; 
+header .navbar-brand{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header .navbar-nav li a{
+  color: #fff !important;
+  text-align: center;
+}
+
+.fa-bars{
+  color: #fff ;
+  font-size: 1.5rem !important;
+}
+
+.navbar-toggler{
+  outline: none !important;
 }
 
 
-#menu-btn{
-    padding: 1rem 1.5rem;
-    background-color: #1a191f;
-    font-size: 3rem;
-    border-radius: .5rem;
-    cursor: pointer;
-    display: none;
-    color: #fff;
-}
-
-
-
-/* Media Queries */
 
 
 
 
-@media (max-width: 991px){
-    html{
-        font-size: 55%;
-    }
-    .header{
-        padding: 2rem;
-    }
-    
-}
-
-@media (max-width: 768px){
-    #menu-btn{
-        display: initial;
-    }
-
-    .header .navbar{
-        position: absolute;
-        top: 10%;
-        right: 2rem;
-        box-shadow: var(--box-shadow);
-        width: 30rem;
-        border-radius: .5rem;
-        border: 2px solid #f9ab00;
-        background-color: #1a191f;
-        height: 38rem;
-        box-shadow: .5rem .5rem  0 #f9ab00;
-        transform: scale(0);
-        transform-origin: top right;
-        transition: 0.2s linear;
-    }
-
-    .header .navbar.active{
-        transform: scale(1);
-        
-    }
-
-    .header .navbar a{
-        margin: 4rem;
-        text-align: left;
-        display: block;
-        font-size: 2rem;
-    }
-}
 
 
-@media (max-width: 450px){
-    html{
-        font-size: 50%;
-    }
-}
+
 
 /* Navbar Section Ends  */
 
@@ -159,32 +95,15 @@ a{
 .home .item{
   display: flex;
   align-items: center;
-  margin: auto;
+  justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
   height: 95vh;
   padding: 0rem 9%; 
 }
 
-.home .item .image{
-  flex: 1 1 35rem;
-}
-.home .item .image img{
-  height: 350px;
-  width: 350px;
-  object-fit: cover;
-  border-radius: 2rem;
-  margin-top: 1rem;
-}
-
-.home .item .content{
-  flex: 1 1 45rem;
-  /* padding-left: 20rem; */
-}
-
 .home .item .content h1{
-  font-size: 4.5rem;
-  padding-bottom: 1rem;
+  font-size: 3.5rem;
   padding-top: 2rem;
   text-align: center;
 }
@@ -193,10 +112,12 @@ a{
   color: #f9ab00;
 }
 .home .item .content p{
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   padding: 1rem 0;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  max-width: 50rem;
   text-align: center;
+
 }
 
 .home .item .buttons{
@@ -204,12 +125,13 @@ a{
   text-align: center;
 }
 .home .item .content .home-btn1{
-  padding: 1rem 3rem;
+  padding: 0.8rem 2.5rem;
   background-color: hsl(0, 94%, 66%);
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1rem;
   border-radius: 2rem;
   transition: 0.2s linear;
+  text-decoration: none;
 }
 .home .item .content .home-btn1:hover{
   border: 2px solid #fff;
@@ -217,11 +139,50 @@ a{
   color: #fff;
 }
 .home .item .content .home-btn2{
+  padding: 0.8rem 3rem;
   border: 2px solid #fff;
-  padding: 1rem 4rem;
   background-color: transparent;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1rem;
   border-radius: 2rem;
   margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* Media Quries */
+@media (max-width: 450px){
+  
+  .home .item .content h1{
+    font-size: 2rem;
+  }
+  
+  .home .item .content p{
+    font-size: 1rem;
+  }
+  
+
+  .home .item .content .home-btn1{
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+
+  }
+  .home .item .content .home-btn2{
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+
+  }
+}
+
+@media (max-width: 328px){
+  
+  .home .item .content .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home .item .content .home-btn2{
+    margin-top: 1rem;  
+    padding: 0.8rem 1rem;
+  }
+
 }
