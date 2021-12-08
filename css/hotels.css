@@ -12,6 +12,11 @@
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
+::selection{
+    background-color:#1a191f;
+    color: #fff;
+}
+
 
 html {
   font-size: 62.5%;
@@ -143,8 +148,8 @@ header .navbar-nav li a{
 .packages .box-container .box .image img {
   height: 100%;
   width: 100%;
-  /* -o-object-fit: cover;
-     object-fit: cover; */
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: .5rem;
 }
 
