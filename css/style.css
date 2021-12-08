@@ -7,10 +7,53 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
     text-transform: capitalize;
 }
+:root{
+  --primary-color: #f9ab00;
+  --box-shadow: .5rem .5rem  0 #10221b;
+  --border: .2rem  solid #10221b;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
 
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
+.services{
+  padding: 2rem 9%;
+}
+.packages{
+  padding: 2rem 9%;
+}
+.membership{
+  padding: 2rem 9%;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  padding-top: 0rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  
+}
 ::selection{
     background-color:#1a191f;
     color: #fff;
@@ -44,21 +87,22 @@ header{
  
 
 header .navbar-brand span{
-  color: #f9ab00;
+  color: var(--primary-color);
 }
 header .navbar-brand{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #fff;
 }
 
 header .navbar-nav li a{
   color: #fff !important;
   text-align: center;
+  font-size: 2rem;
 }
 
 .fa-bars{
   color: #fff ;
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
 }
 
 .navbar-toggler{
@@ -101,20 +145,23 @@ header .navbar-nav li a{
 }
 
 .home .item .content h1{
-  font-size: 3.5rem;
+  font-size: 6rem;
   padding-top: 2rem;
   text-align: center;
+  color: #fff;
 }
 
 .home .item .content h1 span{
-  color: #f9ab00;
+  color: var(--primary-color);
 }
 .home .item .content p{
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 1rem 0;
   padding-bottom: 2rem;
-  max-width: 50rem;
+  max-width: 70rem;
+  color: #fff;
   text-align: center;
+  margin: auto;
 
 }
 
@@ -126,7 +173,7 @@ header .navbar-nav li a{
   padding: 0.8rem 2.5rem;
   background-color: hsl(0, 94%, 66%);
   color: #fff;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 2rem;
   transition: 0.2s linear;
   text-decoration: none;
@@ -141,7 +188,7 @@ header .navbar-nav li a{
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 2rem;
   margin-left: 1rem;
   text-decoration: none;
@@ -151,22 +198,22 @@ header .navbar-nav li a{
 @media (max-width: 450px){
   
   .home .item .content h1{
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   .home .item .content p{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
 
   .home .item .content .home-btn1{
     padding: 0.8rem 2rem;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 
   }
   .home .item .content .home-btn2{
     padding: 0.8rem 2rem;
-    font-size: 0.8rem;
+    font-size: 01.5rem;
 
   }
 }
@@ -184,3 +231,213 @@ header .navbar-nav li a{
   }
 
 }
+
+
+/* Service Section Starts  */
+
+.services .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+}
+
+.services .box-container .box{
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  padding: 2.5rem;
+}
+
+
+.services .box-container .box i{
+  color: var(--primary-color);
+  font-size: 5rem;
+  padding-bottom: .5rem;
+}
+.services .box-container .box h3{
+  color: #000;
+  padding: 1rem 0;
+  font-size: 2rem ;
+}
+
+.services .box-container .box p{
+  color: #000;
+  line-height: 2;
+  font-size: 1.4rem;
+}
+
+.services .heading span{
+  color: var(--primary-color);
+}
+
+/* Service Section Ends */
+
+/* Media Quries */
+@media screen and (max-width: 312px) {
+  .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 2rem;
+  }
+  
+}
+
+/* Hotes Section Starts  */
+.packages {
+  background: #eee;
+}
+
+.packages .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  gap: 1.5rem;
+}
+
+.packages .box-container .box {
+  text-align: center;
+  background: #fff;
+  border: 0.2rem solid #1a191f;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+}
+
+.packages .box-container .box:hover {
+  background: #1a191f;
+}
+
+.packages .box-container .box:hover .content > * {
+  color: #fff;
+}
+
+.packages .box-container .box:hover .btn {
+  border-color: #fff;
+}
+
+.packages .box-container .box:hover .btn:hover {
+  background: #fff;
+  color: #1a191f;
+}
+
+.packages .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: .5rem;
+}
+
+.packages .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .5rem;
+}
+
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+
+.packages .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #1a191f;
+}
+
+.packages .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #1a191f;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.packages .box-container .box .content .cost {
+  font-size: 2rem;
+  color: #f9ab00;
+  font-weight: 900;
+}
+
+.load-more{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+
+  .packages .box-container {
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+}   
+/* Hotes Section Ends */
+
+
+/* Member Ship Section Starts  */
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0 0.5rem;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 306px) {
+  .heading{
+    font-size: 3rem;
+  }
+}
+/* Member Ship Section Ends */

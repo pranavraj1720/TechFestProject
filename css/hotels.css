@@ -75,17 +75,17 @@ header{
   
 header .navbar-brand span{
     color: #f9ab00;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 header .navbar-brand{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
 }
   
 header .navbar-nav li a{
     color: #fff !important;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
   
 .fa-bars{
