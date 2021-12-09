@@ -287,3 +287,120 @@ header .navbar-nav li a{
 }
 
 /* Footer Section Ends */
+
+/* Faq Section Starts  */
+.wrapper {
+  max-width: 90rem;
+  margin: 50px auto;
+  padding: 2rem 9%;
+}
+
+.wrapper .faq-1{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.wrapper .faq-2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.wrapper .search:hover,
+.wrapper .search:focus-within {
+  border: 1px solid transparent;
+  box-shadow: 2px 5px 8px #1f1f1f10, 0px -4px 5px #1f1f1f10
+}
+
+.wrapper .search .form-control {
+  box-shadow: none;
+  outline: none;
+  border: none
+}
+
+.wrapper .search .form-control:focus::placeholder {
+  opacity: 0;
+}
+
+.wrapper .accordion-button {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.wrapper .accordion-button:hover {
+  background-color: #eee;
+}
+
+.wrapper .accordion-button:focus {
+  box-shadow: none
+}
+
+.wrapper .accordion-button::after {
+  background-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c8c8c8;
+  background-position: center center;
+  border-radius: 50%
+}
+
+.wrapper .accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #f7f7f7;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd !important
+}
+
+.accordion-button:not(.collapsed)::after {
+  border-color: #1E88E5
+}
+
+.wrapper .accordion-button.collapsed {
+  border-bottom: 1px solid #ddd !important
+}
+
+.wrapper .accordion-collapse.show {
+  border-bottom: 1px solid #ddd !important
+}
+
+.wrapper .accordion-collapse {
+  background-color: #eaf3fa
+}
+
+.wrapper .accordion-collapse ul li {
+  line-height: 2rem;
+  width: 100%;
+  padding: 0.5rem 1.3rem;
+}
+
+.wrapper .accordion-collapse ul li:hover {
+  background-color: #c9e7ff
+}
+
+.wrapper .accordion-collapse ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size:1.5rem;
+  font-weight: 400;
+  display: block;
+}
+
+.wrapper .accordion-collapse ul li:hover a {
+  color: #222;
+}
+
+@media (max-width: 777px) {
+  .wrapper {
+      margin: 50px 20px
+  }
+}
+
+@media (max-width: 365px) {
+  .wrapper {
+      margin: 50px 10px
+  }
+
+  .w-75 {
+      width: 90% !important
+  }
+}
+/* Faq Section Ends */
