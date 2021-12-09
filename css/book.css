@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+::selection{
+    background-color:#1a191f;
+    color: #fff;
+}
+:root{
+    --primary-color: #f9ab00;
+    --box-shadow: .5rem .5rem  0 #10221b;
+    --border: .2rem  solid #10221b;
+}
+
+section{
+    padding: 3rem 9%;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #1a191f;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding-top: 0rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+
+header{
+    padding: 1rem 5%;
+    background-color: #1a191f;
+  }
+   
+  
+  header .navbar-brand span{
+    color: var(--primary-color);
+  }
+  header .navbar-brand{
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  header .navbar-nav li a{
+    color: #fff !important;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .fa-bars{
+    color: #fff ;
+    font-size: 2rem !important;
+  }
+  
+  .navbar-toggler{
+    outline: none !important;
+  }
+  
+  /* Navbar Section Ends  */
+  
+  
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+  }
+  
+  .book .row .image{
+    flex:1 1 40rem;
+  }
+  
+  .book .row .image img{
+    width:100%;
+  }
+  
+  .book .row form{
+    flex:1 1 40rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+  }
+  
+  .book .row form .inputBox{
+    padding:.5rem 0;
+  }
+  
+  .book .row form .inputBox input{
+    width:100%;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+  }
+  
+  .book .row form .inputBox h3{
+    font-size: 2rem;
+    padding:1rem 0;
+    color:#666;
+  }

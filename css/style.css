@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
+    transition: 0.2s ease-in;
 }
 :root{
   --primary-color: #f9ab00;
@@ -31,6 +32,9 @@
 }
 
 .services{
+  padding: 2rem 9%;
+}
+.rooms{
   padding: 2rem 9%;
 }
 .packages{
@@ -282,6 +286,62 @@ header .navbar-nav li a{
   }
   
 }
+
+/* Around The hotel section starts  */
+.rooms .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.rooms .box-container .box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.rooms .box-container .box:hover .image img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.rooms .box-container .box .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rooms .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rooms .box-container .box .content {
+  padding: 2rem 1.5rem;
+}
+
+
+.rooms .box-container .box .content h3 {
+  font-size: 2.2rem;
+  color: #222;
+}
+
+.rooms .box-container .box .content p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 281px) {
+  .rooms .box-container {
+      -ms-grid-columns: (minmax(23rem, 1fr))[auto-fit];
+          grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    }
+}
+/* Around The hotel section End */
 
 /* Hotes Section Starts  */
 .packages {
