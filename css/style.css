@@ -14,6 +14,10 @@
   --primary-color: #f9ab00;
   --box-shadow: .5rem .5rem  0 #10221b;
   --border: .2rem  solid #10221b;
+    --text-color-1:#444;
+    --text-color-2:#666;
+    --bg-color-1:#fff;
+    --bg-color-2:#eee;
 }
 .btn {
   margin-top: 1rem;
@@ -31,6 +35,9 @@
   color: #fff;
 }
 
+.footer{
+  padding: 2rem 9%;
+}
 .services{
   padding: 2rem 9%;
 }
@@ -40,7 +47,7 @@
 .packages{
   padding: 2rem 9%;
 }
-.membership{
+.pricing{
   padding: 2rem 9%;
 }
 .heading {
@@ -446,58 +453,127 @@ header .navbar-nav li a{
 
 
 /* Member Ship Section Starts  */
-* {
-  box-sizing: border-box;
+.pricing{
+  margin-bottom: 2rem;
+}
+.pricing .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1.5rem;
 }
 
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-}
-
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0 0.5rem;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  box-shadow: var(--box-shadow);
-  border: var(--border);
-}
-
-.price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 2.5rem;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
+.pricing .box-container .box{
+  background:var(--bg-color-1);
+  border-radius: .5rem;
+  padding:2rem;
   text-align: center;
-  font-size: 1.5rem;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
 }
 
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
+.pricing .box-container .box h3{
+  padding:1rem;
+  background: var(--bg-color-2);
+  border-radius: .5rem;
+  font-size: 2rem;
+  color:var(--text-color-1);
 }
 
+.pricing .box-container .box .price{
+  padding-top: 2rem;
+}
 
-@media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
-  }
+.pricing .box-container .box .price span{
+  font-size: 2rem;
+  color:var(--text-color-2);
 }
-@media only screen and (max-width: 306px) {
-  .heading{
-    font-size: 3rem;
-  }
+
+.pricing .box-container .box .price .amount{
+  font-size: 5rem;
+  color:var(--text-color-1);
+  font-weight: bolder;
 }
+
+.pricing .box-container .box ul{
+  padding: .5rem 0;
+  list-style: none;
+}
+
+.pricing .box-container .box ul li{
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color:var(--text-color-2);
+}
+
 /* Member Ship Section Ends */
+
+/* Footer Section Starts  */
+.footer {
+  background: #f3f3f3;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #222;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding-bottom: .5rem;
+}
+
+.footer .box-container .box a {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--primary-color);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+  padding-right: .5rem;
+  color: var(--primary-color);
+}
+
+.footer .box-container .box form input[type="email"] {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: #222;
+  margin: 1rem 0;
+  text-transform: none;
+}
+
+.footer .box-container .box .payment {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.credit {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 2rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section Ends */
