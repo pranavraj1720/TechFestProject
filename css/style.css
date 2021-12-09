@@ -34,7 +34,9 @@
   background: #10221b;
   color: #fff;
 }
-
+.popular{
+  padding: 2rem 9%;
+}
 .footer{
   padding: 2rem 9%;
 }
@@ -243,7 +245,15 @@ header .navbar-nav li a{
   }
 
 }
-
+/* Media Quries */
+@media screen and (max-width: 312px) {
+  .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 2rem;
+  }
+  
+}
 
 /* Service Section Starts  */
 
@@ -284,16 +294,50 @@ header .navbar-nav li a{
 }
 
 /* Service Section Ends */
-
-/* Media Quries */
-@media screen and (max-width: 312px) {
-  .services .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    gap: 2rem;
-  }
-  
+/* Cuisines Section Starts  */
+.popular .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
 }
+
+.popular .box-container .box{
+  padding:2rem;
+  background:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.3);
+  border-radius: .5rem;
+  text-align: center;
+  flex:1 1 30rem;
+  position: relative;
+}
+
+.popular .box-container .box img{
+  height:25rem;
+  object-fit: cover;
+  width:100%;
+  border-radius: .5rem;
+}
+
+.popular .box-container .box .price{
+  position: absolute;
+  top:3rem; left:3rem;
+  background:var(--primary-color);
+  color:#fff;
+  font-size: 2rem;
+  padding:.5rem 1rem;
+  border-radius: .5rem;
+}
+
+.popular .box-container .box h3{
+  color:#333;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+
+/* Cuisines Section Ends */
+
 
 /* Around The hotel section starts  */
 .rooms .box-container {
