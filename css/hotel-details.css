@@ -10,7 +10,15 @@
     text-transform: capitalize;
     transition: 0.2s ease-in;
 }
-
+:root{
+    --primary-color: #f9ab00;
+    --box-shadow: .5rem .5rem  0 #10221b;
+    --border: .2rem  solid #10221b;
+      --text-color-1:#444;
+      --text-color-2:#666;
+      --bg-color-1:#fff;
+      --bg-color-2:#eee;
+  }
 ::selection{
     background-color:#1a191f;
     color: #fff;
@@ -198,3 +206,75 @@ header .navbar-nav li a{
       }
 }
 /* Around The hotel section End */
+
+
+/* Footer Section Starts  */
+.footer {
+    background: #f3f3f3;
+  }
+  
+  .footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #222;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding-bottom: .5rem;
+  }
+  
+  .footer .box-container .box a {
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+    display: block;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+  }
+  
+  .footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--primary-color);
+  }
+  
+  .footer .box-container .box form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #222;
+    margin: 1rem 0;
+    text-transform: none;
+  }
+  
+  .footer .box-container .box .payment {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .credit {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 2rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Footer Section Ends */
