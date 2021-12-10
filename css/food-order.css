@@ -109,7 +109,9 @@ header .navbar-nav li a{
 .navbar-toggler{
   outline: none !important;
 }
-
+.nav-link{
+  text-decoration: underline #f9ab00;
+}
 .dropdown-menu{
   width: 21rem;
   background-color: #1a191f;

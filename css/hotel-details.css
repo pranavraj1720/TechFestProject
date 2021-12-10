@@ -100,7 +100,9 @@ header .navbar-nav li a{
   color: #fff ;
   font-size: 2rem !important;
 }
-
+.nav-link{
+  text-decoration: underline #f9ab00;
+}
 .navbar-toggler{
   outline: none !important;
 }

@@ -73,7 +73,9 @@ section {
   color: #10221b;
   margin-top: 5rem;
 }
-
+.nav-link{
+  text-decoration: underline #f9ab00;
+}
 /* Navbar Section Starts  */
 
 header nav{

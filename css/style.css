@@ -129,7 +129,7 @@ header .navbar-nav li a{
   outline: none !important;
 }
 .nav-link{
-  text-decoration: underline;
+  text-decoration: underline #f9ab00;
 }
 
 .dropdown-menu{

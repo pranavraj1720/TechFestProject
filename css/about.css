@@ -157,7 +157,9 @@ header .navbar-brand{
   font-size: 2.5rem;
   color: #fff;
 }
-
+.nav-link{
+  text-decoration: underline #f9ab00;
+}
 header .navbar-nav li a{
   color: #fff !important;
   text-align: center;
