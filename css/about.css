@@ -1,16 +1,6 @@
 /* Google Fonts: Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
-    transition: 0.2s ease-in;
-}
-
 section{
   padding: 3rem 9%;
 }
@@ -50,10 +40,10 @@ section{
 .heading {
   text-align: center;
   margin-bottom: 5rem;
-  margin-top: 5rem;
-  padding-top: 0rem;
+  padding-top: 7rem;
   font-size: 4rem;
   color: #10221b;
+  margin-top: 5rem;
 }
 html{
   font-size: 62.5%;
@@ -85,8 +75,6 @@ a{
     text-decoration: none;
     color: #000;
 }
-/* Google Fonts: Poppins*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 
 *{
@@ -119,14 +107,8 @@ a{
 }
 
 
-.heading {
-  text-align: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  padding-top: 0rem;
-  font-size: 4rem;
-  color: #10221b;
-}
+
+
 html{
   font-size: 62.5%;
   overflow-x: hidden;

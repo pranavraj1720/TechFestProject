@@ -61,10 +61,9 @@
 .heading {
   text-align: center;
   margin-bottom: 5rem;
-  margin-top: 5rem;
-  padding-top: 0rem;
   font-size: 4rem;
   color: #10221b;
+  margin-top: 5rem;
 }
 
 html{
@@ -129,6 +128,9 @@ header .navbar-nav li a{
 .navbar-toggler{
   outline: none !important;
 }
+.nav-link{
+  text-decoration: underline;
+}
 
 .dropdown-menu{
   width: 21rem;
@@ -149,7 +151,7 @@ header .navbar-nav li a{
 /* home section starts  */
 
 .home{
-  height: 95vh;
+  height: 100vh;
 }
 .home #list1{
   /* background: rgba(209, 137, 137, 0.7) url(https://preview.colorlib.com/theme/montana/img/banner/xbanner.png.pagespeed.ic.Fz8_Hc8pX8.jpg); */
@@ -166,7 +168,7 @@ header .navbar-nav li a{
   justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
-  height: 95vh;
+  height: 100vh;
   padding: 0rem 9%; 
 }
 

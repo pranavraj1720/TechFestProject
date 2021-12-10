@@ -36,10 +36,10 @@ section{
 .heading {
   text-align: center;
   margin-bottom: 5rem;
-  margin-top: 5rem;
   padding-top: 0rem;
   font-size: 4rem;
   color: #10221b;
+  margin-top: 9rem;
 }
 
 html{
@@ -115,7 +115,65 @@ header .navbar-nav li a{
 }
 
 /* Navbar Section Ends  */
+/* Covid 19 Measures Starts  */
+.covid .box-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 3rem 0;
+}
 
+.covid .box-container .image{
+  flex: 1 1 45rem;
+  overflow: hidden;
+  border-radius: .5em;
+  border: 5px solid rgba(255, 255, 255, .05);
+}
+
+
+.covid .box-container .image img{
+  width: 100%;
+  border-radius: 2rem;
+  transition: 0.5s linear;
+  margin: 0 auto;
+}
+
+
+
+.covid .box-container .content{
+  flex: 1 1 45rem;
+}
+
+
+.covid .box-container .content h1{
+  font-size: 4rem;
+  padding: 1rem 0;
+  color: #000;
+}
+
+
+
+.covid .box-container .content p{
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  color: #000;
+}
+
+
+@media screen and (max-width: 375px) {
+  .covid .box-container .content h1{
+    font-size: 3rem;
+  }
+  
+  
+  
+  .covid .box-container .content p{
+    font-size: 1.7rem;
+  }
+}
+
+/* Covid 19 Measures Ends */
 /* Prevent Section Starts  */
 .prevent .box-container{
     display: flex;
