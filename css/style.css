@@ -159,7 +159,6 @@ header .navbar-nav li a{
   height: 100vh;
 }
 .home #list1{
-  /* background: rgba(209, 137, 137, 0.7) url(https://preview.colorlib.com/theme/montana/img/banner/xbanner.png.pagespeed.ic.Fz8_Hc8pX8.jpg); */
   background: rgba(74, 123, 126, 0.7) url(https://i.postimg.cc/GmfKDmXb/h1-hero.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -175,6 +174,7 @@ header .navbar-nav li a{
   flex-wrap: wrap;
   height: 100vh;
   padding: 0rem 9%; 
+  padding-top: 9rem;
 }
 
 .home .item .content h1{
@@ -321,7 +321,6 @@ header .navbar-nav li a{
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
-  margin: 3rem 0;
 }
 
 .covid .box-container .image{
