@@ -150,6 +150,17 @@ header .navbar-nav li a{
     color: #000;
 }
 
+@media screen and (max-width: 375px) {
+  .hotel_details .box-container .content h1{
+    font-size: 3rem;
+}
+
+
+
+.hotel_details .box-container .content p{
+    font-size: 1.7rem;
+}
+}
 /* Around The hotel section starts  */
 .rooms .box-container {
     display: -ms-grid;
