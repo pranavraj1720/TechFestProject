@@ -99,7 +99,8 @@ a{
 
 /* Navbar Section Starts  */
 
-header nav{
+
+header {
   padding: 1rem 10%;
   background-color: #1a191f;
   height: 8rem;
@@ -259,15 +260,7 @@ header .navbar-nav li a{
   }
 
 }
-/* Media Quries */
-@media screen and (max-width: 312px) {
-  .services .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    gap: 2rem;
-  }
-  
-}
+
 
 /* Service Section Starts  */
 
@@ -305,6 +298,16 @@ header .navbar-nav li a{
 
 .services .heading span{
   color: var(--primary-color);
+}
+
+/* Media Quries */
+@media screen and (max-width: 392px) {
+  .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 2rem;
+  }
+  
 }
 
 /* Service Section Ends */
@@ -485,7 +488,7 @@ header .navbar-nav li a{
   padding: 1rem 0;
 }
 
-@media screen and (max-width: 281px) {
+@media screen and (max-width: 332px) {
   .rooms .box-container {
       -ms-grid-columns: (minmax(23rem, 1fr))[auto-fit];
           grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
@@ -674,6 +677,14 @@ header .navbar-nav li a{
 
  50% { transform: translate(0, 20px); }
   100% { transform: translate(0, -0px);}
+}
+
+@media screen and (max-width: 392px) {
+}
+.pricing .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap:1.5rem;
 }
 
 /* Member Ship Section Ends */
