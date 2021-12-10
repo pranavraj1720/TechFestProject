@@ -656,6 +656,25 @@ header .navbar-nav li a{
   font-size: 1.7rem;
   color:var(--text-color-2);
 }
+.pricing .box-container .box:hover{
+   animation-name: floating;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   margin-left: 0px;
+   margin-top: 5px;
+   opacity: 1;
+}
+
+
+
+@keyframes floating {
+  0% { transform: translate(0, 0px);; 
+  }
+
+ 50% { transform: translate(0, 20px); }
+  100% { transform: translate(0, -0px);}
+}
 
 /* Member Ship Section Ends */
 
