@@ -1,0 +1,334 @@
+/* Google Fonts: Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transition: 0.2s ease-in;
+}
+:root{
+  --primary-color: #f9ab00;
+  --box-shadow: .5rem .5rem  0 #10221b;
+  --border: .2rem  solid #10221b;
+    --text-color-1:#444;
+    --text-color-2:#666;
+    --bg-color-1:#fff;
+    --bg-color-2:#eee;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  color: #10221b;
+  margin-top: 5rem;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  
+}
+::selection{
+    background-color:#1a191f;
+    color: #fff;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1a191f;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navbar Section Starts  */
+
+
+header {
+  padding: 1rem 10%;
+  background-color: #1a191f;
+}
+ 
+
+header .navbar-brand span{
+  color: var(--primary-color);
+}
+header .navbar-brand{
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+header .navbar-nav li a{
+  color: #fff !important;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.fa-bars{
+  color: #fff ;
+  font-size: 2rem !important;
+}
+
+.navbar-toggler{
+  outline: none !important;
+}
+.nav-link{
+  text-decoration: underline #f9ab00;
+}
+
+.dropdown-menu{
+  width: 21rem;
+  background-color: #1a191f;
+}
+.dropdown-item:hover{
+  background-color: #000;
+}
+
+
+
+@media screen and (max-width: 988px) {
+  header {
+    padding: 1rem 10%;
+    background-color: #1a191f;
+  }
+}
+
+
+
+/* Navbar Section Ends  */
+
+/* Payment Section Starts */
+body {
+    font-family: 'Roboto', sans-serif!important;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+}
+
+.card {
+	width: 50rem;
+    margin: auto;
+    background: white;
+    position:center;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+.product {
+    object-fit: cover;
+	width: 20em;
+    height: 20em;
+    border-radius: 100%;
+}
+
+.rightside {
+    background-color: #ffffff;
+	width:50rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+}
+h1{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: normal;
+}
+h2{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+p{
+    display:block;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: .8rem 0;
+}
+
+.inputbox
+{
+    color:#030303;
+	width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: normal;
+  outline:none;
+}
+
+.expcvv {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.6rem;
+}
+
+.expcvv_text{
+    padding-right: 1rem;
+}
+.expcvv_text2{
+    padding:0 1rem;
+}
+
+
+.btn{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .leftside{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+      border-top-right-radius:0;
+      border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+      border-radius:0;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    
+.rightside {
+    background-color: #ffffff;
+	width:25rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+}
+}
+/* Payment Section Ends */
+
+
+/* Footer Section Starts  */
+.footer {
+    background: #f3f3f3;
+  }
+  
+  .footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #222;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding-bottom: .5rem;
+  }
+  
+  .footer .box-container .box a {
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+    display: block;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+  }
+  
+  .footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--primary-color);
+  }
+  
+  .footer .box-container .box form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #222;
+    margin: 1rem 0;
+    text-transform: none;
+  }
+  
+  .footer .box-container .box .payment {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .credit {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 2rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Footer Section Ends */
