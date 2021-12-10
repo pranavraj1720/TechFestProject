@@ -75,38 +75,43 @@ section {
 /* Navbar Section Starts  */
 
 header{
-    padding: 1rem 5%;
-    background-color: #1a191f;
-}
-   
-  
-header .navbar-brand span{
-    color: #f9ab00;
-    font-size: 2rem;
-}
-header .navbar-brand{
-    font-size: 2rem;
-    color: #fff;
-}
-  
-header .navbar-nav li a{
-    color: #fff !important;
-    text-align: center;
-    font-size: 2rem;
-}
-  
-.fa-bars{
-    color: #fff ;
-    font-size: 2.5rem !important;
+  padding: 1rem 10%;
+  background-color: #1a191f;
 }
  
-.navbar-toggler{
-    outline: none !important;
+
+header .navbar-brand span{
+  color: var(--primary-color);
+}
+header .navbar-brand{
+  font-size: 2.5rem;
+  color: #fff;
 }
 
-  
-  /* Navbar Section Ends  */
+header .navbar-nav li a{
+  color: #fff !important;
+  text-align: center;
+  font-size: 2rem;
+}
 
+.fa-bars{
+  color: #fff ;
+  font-size: 2rem !important;
+}
+
+.navbar-toggler{
+  outline: none !important;
+}
+
+.dropdown-menu{
+  width: 21rem;
+  background-color: #1a191f;
+}
+.dropdown-item:hover{
+  background-color: #000;
+}
+
+/* Navbar Section Ends  */
 /* Contact Us SEctions starts  */
 .contact .icons-container {
     display: -ms-grid;

@@ -52,7 +52,7 @@
 .rooms{
   padding: 2rem 9%;
 }
-.packages{
+.hotel{
   padding: 2rem 9%;
 }
 .pricing{
@@ -101,7 +101,7 @@ a{
 /* Navbar Section Starts  */
 
 header{
-  padding: 1rem 5%;
+  padding: 1rem 10%;
   background-color: #1a191f;
 }
  
@@ -129,8 +129,13 @@ header .navbar-nav li a{
   outline: none !important;
 }
 
-
-
+.dropdown-menu{
+  width: 21rem;
+  background-color: #1a191f;
+}
+.dropdown-item:hover{
+  background-color: #000;
+}
 
 
 
@@ -486,82 +491,61 @@ header .navbar-nav li a{
 /* Around The hotel section End */
 
 /* Hotes Section Starts  */
-.packages {
-  background: #eee;
+
+.hotel .box-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 3rem 0;
 }
 
-.packages .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
-  gap: 1.5rem;
-}
-
-.packages .box-container .box {
-  text-align: center;
-  background: #fff;
-  border: 0.2rem solid #1a191f;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: .5rem;
-}
-
-.packages .box-container .box:hover {
-  background: #1a191f;
-}
-
-.packages .box-container .box:hover .content > * {
-  color: #fff;
-}
-
-.packages .box-container .box:hover .btn {
-  border-color: #fff;
-}
-
-.packages .box-container .box:hover .btn:hover {
-  background: #fff;
-  color: #1a191f;
-}
-
-.packages .box-container .box .image {
-  height: 25rem;
+.hotel .box-container .image{
+  flex: 1 1 50rem;
   overflow: hidden;
-  padding: 2rem;
-  padding-bottom: 0;
-  border-radius: .5rem;
+  border-radius: .5em;
+  border: 5px solid rgba(255, 255, 255, .05);
 }
 
-.packages .box-container .box .image img {
-  height: 100%;
+
+.hotel .box-container .image img{
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: .5rem;
+  border-radius: 2rem;
+  transition: 0.5s linear;
 }
 
-.packages .box-container .box .content {
-  padding: 2rem;
+
+
+.hotel .box-container .content{
+  flex: 1 1 45rem;
 }
 
-.packages .box-container .box .content h3 {
-  font-size: 2rem;
-  color: #1a191f;
-}
 
-.packages .box-container .box .content p {
-  font-size: 1.5rem;
-  color: #1a191f;
+.hotel .box-container .content h1{
+  font-size: 4rem;
   padding: 1rem 0;
-  line-height: 2;
+  color: #000;
 }
 
-.packages .box-container .box .content .cost {
-  font-size: 2rem;
-  color: #f9ab00;
-  font-weight: 900;
+
+
+.hotel .box-container .content p{
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  color: #000;
 }
 
+@media screen and (max-width: 375px) {
+.hotel .box-container .content h1{
+  font-size: 3rem;
+}
+
+
+
+.hotel .box-container .content p{
+  font-size: 1.7rem;
+}
+}
 .load-more{
   text-align: center;
   margin-top: 1rem;
@@ -569,21 +553,6 @@ header .navbar-nav li a{
 
 
 
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-  .heading {
-    font-size: 3rem;
-  }
-
-  .packages .box-container {
-    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-  }
-}   
 /* Hotes Section Ends */
 
 /* Gallery Section Starts Here  */

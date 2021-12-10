@@ -80,7 +80,7 @@ a{
 /* Navbar Section Starts  */
 
 header{
-  padding: 1rem 5%;
+  padding: 1rem 10%;
   background-color: #1a191f;
 }
  
@@ -107,6 +107,22 @@ header .navbar-nav li a{
 .navbar-toggler{
   outline: none !important;
 }
+
+.dropdown-menu{
+  width: 21rem;
+  background-color: #1a191f;
+}
+.dropdown-item:hover{
+  background-color: #000;
+}
+
+
+
+
+
+
+
+/* Navbar Section Ends  */
 
 
 .order .row{

@@ -73,37 +73,46 @@ section {
   color: #10221b;
 }
 
+/* Navbar Section Starts  */
+
 header{
-    padding: 1rem 5%;
-    background-color: #1a191f;
-  }
-   
-  
-  header .navbar-brand span{
-    color: var(--primary-color);
-  }
-  header .navbar-brand{
-    font-size: 2.5rem;
-    color: #fff;
-  }
-  
-  header .navbar-nav li a{
-    color: #fff !important;
-    text-align: center;
-    font-size: 2rem;
-  }
-  
-  .fa-bars{
-    color: #fff ;
-    font-size: 2rem !important;
-  }
-  
-  .navbar-toggler{
-    outline: none !important;
-  }
-  
-  /* Navbar Section Ends  */
-  
+  padding: 1rem 10%;
+  background-color: #1a191f;
+}
+ 
+
+header .navbar-brand span{
+  color: var(--primary-color);
+}
+header .navbar-brand{
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+header .navbar-nav li a{
+  color: #fff !important;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.fa-bars{
+  color: #fff ;
+  font-size: 2rem !important;
+}
+
+.navbar-toggler{
+  outline: none !important;
+}
+
+.dropdown-menu{
+  width: 21rem;
+  background-color: #1a191f;
+}
+.dropdown-item:hover{
+  background-color: #000;
+}
+
+/* Navbar Section Ends  */
   
 .book .row{
     display: flex;

@@ -136,14 +136,6 @@ header .navbar-nav li a{
   color: #fff;
 }
 
-.packages .box-container .box:hover .btn {
-  border-color: #fff;
-}
-
-.packages .box-container .box:hover .btn:hover {
-  background: #fff;
-  color: #1a191f;
-}
 
 .packages .box-container .box .image {
   height: 25rem;
@@ -170,18 +162,6 @@ header .navbar-nav li a{
   color: #1a191f;
 }
 
-.packages .box-container .box .content p {
-  font-size: 1.5rem;
-  color: #1a191f;
-  padding: 1rem 0;
-  line-height: 2;
-}
-
-.packages .box-container .box .content .price {
-  font-size: 2rem;
-  color: #f9ab00;
-  font-weight: 900;
-}
 
 
 
