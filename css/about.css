@@ -177,6 +177,9 @@ header .navbar-nav li a{
   width: 21rem;
   background-color: #1a191f;
 }
+.dropdown-item{
+  text-decoration: underline #f9ab00;
+}
 .dropdown-item:hover{
   background-color: #000;
 }

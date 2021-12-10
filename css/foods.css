@@ -86,7 +86,9 @@ header {
   background-color: #1a191f;
 }
  
-
+.dropdown-item{
+  text-decoration: underline #f9ab00;
+}
 header .navbar-brand span{
   color: var(--primary-color);
 }

@@ -100,6 +100,9 @@ header .navbar-nav li a{
   color: #fff ;
   font-size: 2rem !important;
 }
+.dropdown-item{
+  text-decoration: underline #f9ab00;
+}
 .nav-link{
   text-decoration: underline #f9ab00;
 }

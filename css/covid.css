@@ -81,7 +81,9 @@ header {
 }
  
  
- 
+.dropdown-item{
+  text-decoration: underline #f9ab00;
+}
 
 header .navbar-brand span{
   color: var(--primary-color);
