@@ -18,6 +18,7 @@
     --text-color-2:#666;
     --bg-color-1:#fff;
     --bg-color-2:#eee;
+    --black:#192a56;
 }
 .btn {
   margin-top: 1rem;
@@ -28,20 +29,26 @@
   background: none;
   font-size: 1.7rem;
   padding: 1rem 3rem;
+  width: 100%;
 }
-
-section{
+.footer{
     padding: 2rem 9%;
 }
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
 .heading {
   text-align: center;
   margin-bottom: 5rem;
-  padding-top: 0rem;
   font-size: 4rem;
   color: #10221b;
   margin-top: 9rem;
 }
-
+section{
+    padding: 2rem 9%;
+}
 html{
   font-size: 62.5%;
   overflow-x: hidden;
@@ -75,15 +82,12 @@ a{
 
 /* Navbar Section Starts  */
 
+
 header {
   padding: 1rem 10%;
   background-color: #1a191f;
 }
  
- 
-.dropdown-item{
-  text-decoration: underline #f9ab00;
-}
 
 header .navbar-brand span{
   color: var(--primary-color);
@@ -92,9 +96,9 @@ header .navbar-brand{
   font-size: 2.5rem;
   color: #fff;
 }
-.nav-link{
-  text-decoration: underline #f9ab00;
-}
+.dropdown-item{
+    text-decoration: underline #f9ab00;
+  }
 header .navbar-nav li a{
   color: #fff !important;
   text-align: center;
@@ -109,6 +113,9 @@ header .navbar-nav li a{
 .navbar-toggler{
   outline: none !important;
 }
+.nav-link{
+  text-decoration: underline #f9ab00;
+}
 
 .dropdown-menu{
   width: 21rem;
@@ -120,171 +127,160 @@ header .navbar-nav li a{
   background-color: #000;
 }
 
+
+
+@media screen and (max-width: 988px) {
+  header {
+    padding: 1rem 10%;
+    background-color: #1a191f;
+  }
+}
+
+
+
 /* Navbar Section Ends  */
-/* Covid 19 Measures Starts  */
-.covid .box-container{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5rem;
-  margin: 3rem 0;
-}
-
-.covid .box-container .image{
-  flex: 1 1 45rem;
-  overflow: hidden;
-  border-radius: .5em;
-  border: 5px solid rgba(255, 255, 255, .05);
-}
-
-
-.covid .box-container .image img{
-  width: 100%;
-  border-radius: 2rem;
-  transition: 0.5s linear;
-  margin: 0 auto;
-}
-
-
-
-.covid .box-container .content{
-  flex: 1 1 45rem;
-}
-
-
-.covid .box-container .content h1{
-  font-size: 4rem;
-  padding: 1rem 0;
-  color: #000;
-}
-
-
-
-.covid .box-container .content p{
-  font-size: 1.7rem;
-  padding: 1rem 0;
-  color: #000;
-}
-
-
-@media screen and (max-width: 375px) {
-  .covid .box-container .content h1{
-    font-size: 3rem;
+.team{
+    background:#fff;
   }
   
-  
-  
-  .covid .box-container .content p{
-    font-size: 1.7rem;
+  .team .heading{
+    color:#000;
   }
-}
-
-/* Covid 19 Measures Ends */
-/* Prevent Section Starts  */
-.prevent .box-container{
+  
+  .team .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.prevent .box-container .box{
-    flex:1 1 35rem;
-    border-radius: .5rem;
+  }
+  
+  .team .box-container .box{
+    width:27rem;
+    background:#fff;
+    position: relative;
     margin:1rem;
-    padding:1rem;
     text-align: center;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-.prevent .box-container .box img{
-    height:12rem;
-    padding:1rem;
-}
-
-.prevent .box-container .box h3{
-    color:#000;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+  }
+  .team .box-container .box:hover{
+    box-shadow: none;
+  }
+  .team .box-container .box img{
+    height:10rem;
+    width:10rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team .box-container .box h3{
     font-size: 2.5rem;
-    margin-top: 2rem;
-
-}
-
-.prevent .box-container .box p{
     color:#000;
-    font-size: 1.4rem;
-    padding:1rem;
-}
-
-
-/* Prevent Section Ends */
-
+  }
+  
+  .team .box-container .box span{
+    font-size: 1.5rem;
+    color:var(--orange);
+  }
+  
+  .team .box-container .box p{
+    padding:1rem 2.5rem;
+    font-size: 1.3rem;
+    color:#666;
+  }
+  
+  .team .box-container .box .share{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    background:var(--primary-color);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    color:#fff;
+    font-size: 1.7rem;
+  }
+  
+  .team .box-container .box .share a:hover{
+    background:#fff;
+    color:#000;
+  }
+  
 /* Footer Section Starts  */
+
 .footer {
-  background: #f3f3f3;
+	background: #f3f3f3;
 }
 
 .footer .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 1.5rem;
 }
 
 .footer .box-container .box h3 {
-  font-size: 2.2rem;
-  color: #222;
-  padding: 1rem 0;
+	font-size: 2.2rem;
+	color: #222;
+	padding: 1rem 0;
 }
 
 .footer .box-container .box p {
-  font-size: 1.5rem;
-  color: #666;
-  padding-bottom: .5rem;
+	font-size: 1.5rem;
+	color: #666;
+	padding-bottom: .5rem;
 }
 
 .footer .box-container .box a {
-  font-size: 1.4rem;
-  color: #666;
-  padding: 1rem 0;
-  display: block;
+	font-size: 1.4rem;
+	color: #666;
+	padding: 1rem 0;
+	display: block;
 }
 
 .footer .box-container .box a:hover {
-  color: var(--primary-color);
+	color: var(--primary-color);
 }
 
 .footer .box-container .box a:hover i {
-  padding-right: 2rem;
+	padding-right: 2rem;
 }
 
 .footer .box-container .box a i {
-  padding-right: .5rem;
-  color: var(--primary-color);
+	padding-right: .5rem;
+	color: var(--primary-color);
 }
 
 .footer .box-container .box form input[type="email"] {
-  width: 100%;
-  padding: 1rem 1.2rem;
-  font-size: 1.6rem;
-  color: #222;
-  margin: 1rem 0;
-  text-transform: none;
+	width: 100%;
+	padding: 1rem 1.2rem;
+	font-size: 1.6rem;
+	color: #222;
+	margin: 1rem 0;
+	text-transform: none;
 }
 
 .footer .box-container .box .payment {
-  width: 100%;
-  margin-top: 2rem;
+	width: 100%;
+	margin-top: 2rem;
 }
 
 .credit {
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 2rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 2rem;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Footer Section Ends */

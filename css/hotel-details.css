@@ -111,6 +111,8 @@ header .navbar-nav li a{
 .dropdown-menu{
   width: 21rem;
   background-color: #1a191f;
+  margin: auto;
+  border: 2px solid #f9ab00;
 }
 .dropdown-item:hover{
   background-color: #000;

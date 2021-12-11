@@ -40,10 +40,9 @@
 
 .heading {
   text-align: center;
-  margin-bottom: 5rem;
   font-size: 4rem;
   color: #10221b;
-  margin-top: 5rem;
+  margin-top: 15rem;
 }
 
 html{
@@ -95,6 +94,7 @@ header .navbar-brand{
 }
 .dropdown-item{
     text-decoration: underline #f9ab00;
+
   }
 header .navbar-nav li a{
   color: #fff !important;
@@ -117,6 +117,8 @@ header .navbar-nav li a{
 .dropdown-menu{
   width: 21rem;
   background-color: #1a191f;
+  margin: auto;
+  border: 2px solid #f9ab00;
 }
 .dropdown-item:hover{
   background-color: #000;
@@ -278,13 +280,39 @@ header .navbar-nav li a{
     .wrapper {
         width: 450px;
     }
-}
-@media screen and (max-width: 465px){
     .payment{
-        height: 90rem;
+        height: 180vh;
+    }
+    
+}
+@media screen and (max-width: 485px){
+    .payment{
+        height: 250vh;
     }
     .wrapper {
         width: 350px;
+    }
+    .input_group{
+        display: block;
+    }
+    
+    .input_box{    
+        margin-bottom: 1.5rem;
+    }
+}
+@media screen and (max-width: 465px){
+    .payment{
+        height: 250vh;
+    }
+    .wrapper {
+        width: 350px;
+    }
+    .input_group{
+        display: block;
+    }
+    
+    .input_box{    
+        margin-bottom: 1.5rem;
     }
 }
 @media screen and (max-width: 375px){
@@ -295,7 +323,7 @@ header .navbar-nav li a{
         width: 300px;
     }
 
-
+    
 }
 @media screen and (max-width: 311px){
     .wrapper {
@@ -307,7 +335,7 @@ header .navbar-nav li a{
     }
     
     .input_box{    
-        margin-bottom: 1.5rem
+        margin-bottom: 1.5rem;
     }
 
 
