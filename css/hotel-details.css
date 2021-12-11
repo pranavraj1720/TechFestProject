@@ -1,76 +1,74 @@
 /* Google Fonts: Poppins*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  transition: 0.2s ease-in;
+}
+:root {
+  --primary-color: #f9ab00;
+  --box-shadow: 0.5rem 0.5rem 0 #10221b;
+  --border: 0.2rem solid #10221b;
+  --text-color-1: #444;
+  --text-color-2: #666;
+  --bg-color-1: #fff;
+  --bg-color-2: #eee;
+}
+::selection {
+  background-color: #1a191f;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
-    transition: 0.2s ease-in;
-}
-:root{
-    --primary-color: #f9ab00;
-    --box-shadow: .5rem .5rem  0 #10221b;
-    --border: .2rem  solid #10221b;
-      --text-color-1:#444;
-      --text-color-2:#666;
-      --bg-color-1:#fff;
-      --bg-color-2:#eee;
-  }
-::selection{
-    background-color:#1a191f;
-    color: #fff;
-}
-::-webkit-scrollbar{
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: #1a191f;
+::-webkit-scrollbar-thumb {
+  background-color: #1a191f;
 }
 
 .heading {
-    text-align: center;
-    margin-bottom: 5rem;
-    padding-top: 0rem;
-    font-size: 4rem;
-    color: #10221b;
-    font-weight: normal;
-    margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding-top: 0rem;
+  font-size: 4rem;
+  color: #10221b;
+  font-weight: normal;
+  margin-top: 5rem;
 }
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    border: 0.2rem solid #10221b;
-    color: #10221b;
-    cursor: pointer;
-    background: none;
-    font-size: 1.7rem;
-    padding: 1rem 3rem;
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
 }
-  
+
 .btn:hover {
-    background: #10221b;
-    color: #fff;
-    transition: 0.2s linear;
+  background: #10221b;
+  color: #fff;
+  transition: 0.2s linear;
 }
 section {
-    padding: 5rem 9%;
-  }
+  padding: 5rem 9%;
+}
 
-html{
+html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
 
-
-a{
-    text-decoration: none;
-    color: #000;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Navbar Section Starts  */
@@ -79,225 +77,215 @@ header {
   background-color: #1a191f;
 }
 
-.dropdown-item{
+.dropdown-item {
   text-decoration: underline #f9ab00;
 }
 
-header .navbar-brand span{
+header .navbar-brand span {
   color: var(--primary-color);
 }
-header .navbar-brand{
+header .navbar-brand {
   font-size: 2.5rem;
   color: #fff;
 }
 
-header .navbar-nav li a{
+header .navbar-nav li a {
   color: #fff !important;
   text-align: center;
   font-size: 2rem;
 }
 
-.fa-bars{
-  color: #fff ;
+.fa-bars {
+  color: #fff;
   font-size: 2rem !important;
 }
-.nav-link{
+.nav-link {
   text-decoration: underline #f9ab00;
 }
-.navbar-toggler{
+.navbar-toggler {
   outline: none !important;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   width: 21rem;
   background-color: #1a191f;
   margin: auto;
   border: 2px solid #f9ab00;
 }
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: #000;
 }
 
 /* Navbar Section Ends  */
-.hotel_details .box-container{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-    margin: 3rem 0;
+.hotel_details .box-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 3rem 0;
 }
 
-.hotel_details .box-container .image{
-    flex: 1 1 45rem;
-    overflow: hidden;
-    border-radius: .5em;
-    border: 5px solid rgba(255, 255, 255, .05);
+.hotel_details .box-container .image {
+  flex: 1 1 45rem;
+  overflow: hidden;
+  border-radius: 0.5em;
+  border: 5px solid rgba(255, 255, 255, 0.05);
 }
 
-
-.hotel_details .box-container .image img{
-    width: 100%;
-    border-radius: 2rem;
-    transition: 0.5s linear;
-    margin: 0 auto;
+.hotel_details .box-container .image img {
+  width: 100%;
+  border-radius: 2rem;
+  transition: 0.5s linear;
+  margin: 0 auto;
 }
 
-
-
-.hotel_details .box-container .content{
-    flex: 1 1 45rem;
+.hotel_details .box-container .content {
+  flex: 1 1 45rem;
 }
 
-
-.hotel_details .box-container .content h1{
-    font-size: 4rem;
-    padding: 1rem 0;
-    color: #000;
+.hotel_details .box-container .content h1 {
+  font-size: 4rem;
+  padding: 1rem 0;
+  color: #000;
 }
 
-
-
-.hotel_details .box-container .content p{
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    color: #000;
+.hotel_details .box-container .content p {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  color: #000;
 }
 
 @media screen and (max-width: 375px) {
-  .hotel_details .box-container .content h1{
+  .hotel_details .box-container .content h1 {
     font-size: 3rem;
-}
+  }
 
-
-
-.hotel_details .box-container .content p{
+  .hotel_details .box-container .content p {
     font-size: 1.7rem;
-}
+  }
 }
 /* Around The hotel section starts  */
 .rooms .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .rooms .box-container .box {
-    border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .rooms .box-container .box:hover .image img {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  
-  .rooms .box-container .box .image {
-    height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .rooms .box-container .box .image img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .rooms .box-container .box .content {
-    padding: 2rem 1.5rem;
-  }
-  
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
 
-  .rooms .box-container .box .content h3 {
-    font-size: 2.2rem;
-    color: #222;
-  }
-  
-  .rooms .box-container .box .content p {
-    font-size: 1.4rem;
-    color: #666;
-    line-height: 2;
-    padding: 1rem 0;
-  }
-  
+.rooms .box-container .box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.rooms .box-container .box:hover .image img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.rooms .box-container .box .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rooms .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.rooms .box-container .box .content {
+  padding: 2rem 1.5rem;
+}
+
+.rooms .box-container .box .content h3 {
+  font-size: 2.2rem;
+  color: #222;
+}
+
+.rooms .box-container .box .content p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
 @media screen and (max-width: 281px) {
-    .rooms .box-container {
-        -ms-grid-columns: (minmax(23rem, 1fr))[auto-fit];
-            grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-      }
+  .rooms .box-container {
+    -ms-grid-columns: (minmax(23rem, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  }
 }
 /* Around The hotel section End */
 
-
 /* Footer Section Starts  */
 .footer {
-    background: #f3f3f3;
-  }
-  
-  .footer .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .footer .box-container .box h3 {
-    font-size: 2.2rem;
-    color: #222;
-    padding: 1rem 0;
-  }
-  
-  .footer .box-container .box p {
-    font-size: 1.5rem;
-    color: #666;
-    padding-bottom: .5rem;
-  }
-  
-  .footer .box-container .box a {
-    font-size: 1.4rem;
-    color: #666;
-    padding: 1rem 0;
-    display: block;
-  }
-  
-  .footer .box-container .box a:hover {
-    color: var(--primary-color);
-  }
-  
-  .footer .box-container .box a:hover i {
-    padding-right: 2rem;
-  }
-  
-  .footer .box-container .box a i {
-    padding-right: .5rem;
-    color: var(--primary-color);
-  }
-  
-  .footer .box-container .box form input[type="email"] {
-    width: 100%;
-    padding: 1rem 1.2rem;
-    font-size: 1.6rem;
-    color: #222;
-    margin: 1rem 0;
-    text-transform: none;
-  }
-  
-  .footer .box-container .box .payment {
-    width: 100%;
-    margin-top: 2rem;
-  }
-  
-  .credit {
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 2rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Footer Section Ends */
+  background: #f3f3f3;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #222;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding-bottom: 0.5rem;
+}
+
+.footer .box-container .box a {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--primary-color);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.footer .box-container .box form input[type="email"] {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: #222;
+  margin: 1rem 0;
+  text-transform: none;
+}
+
+.footer .box-container .box .payment {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.credit {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 2rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section Ends */
